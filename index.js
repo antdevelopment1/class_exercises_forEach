@@ -176,6 +176,27 @@
 // Sort an array
 // Given an array of strings such as the array of names given in one of the "Good Job" problem, 
 // sort them by alphabetically order.
+// var people = [
+//         'Dom',
+//         'Lyn',
+//         'Kirk',
+//         'Autumn',
+//         'Trista',
+//         'Jesslyn',
+//         'Kevin',
+//         'John',
+//         'Eli',
+//         'Juan',
+//         'Robert',
+//         'Keyur',
+//         'Jason',
+//         'Che',
+//         'Ben'
+//       ];
+// console.log(people.sort());
+
+// Sort an array, 2
+// Sort the same array, but not by alphabetically order, but by how long each name is, shortest name first.
 var people = [
         'Dom',
         'Lyn',
@@ -192,7 +213,7 @@ var people = [
         'Jason',
         'Che',
         'Ben'
-      ];
-console.log(people.sort());
-// Sort an array, 2
-// Sort the same array, but not by alphabetically order, but by how long each name is, shortest name first.
+];
+console.log(people.sort(function(a, b) {
+    return a.length - b.length;
+}));
