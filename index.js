@@ -1,6 +1,5 @@
-// Write a function which takes an array of numbers as
-// input and returns a new array containing only the positive
-// numbers in the given array.
+// Write a function which takes an array of numbers as input and returns a new array containing only the 
+// even numbers in the given array.
 
 // Creates a function to retrieve even numbers.
 function getEvens(allNumbers) {
@@ -25,4 +24,15 @@ function getEvens(allNumbers) {
 // We log the function to the console and call it.
 console.log(getEvens([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
-
+// Write a function which takes an array of numbers as input and returns a new array containing only 
+// the positive numbers in the given array.
+function getPositive(list) {
+    positiveNumber = [];
+    list.forEach(function(number) {
+        if (number > 0) {
+            positiveNumber.push(number);
+        }
+    });
+    return positiveNumber;
+}
+console.log(getPositive([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 0, -1, -2, -3, -4, -5, -6, -7, -8, -9, -10]));
